@@ -1,0 +1,185 @@
+:root {
+    --bg-color: #0f172a;
+    --card-bg: #1e293b;
+    --text-color: #f8fafc;
+    --text-muted: #94a3b8;
+    --accent-color: #38bdf8;
+    --accent-hover: #0ea5e9;
+    --border-color: #334155;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.subtitle {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 25px 30px;
+    box-shadow: 0 10px 25px -5px rgba(0,0,0,0.3);
+    box-sizing: border-box;
+}
+
+.card h2 {
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+}
+
+input[type="text"] {
+    width: 100%;
+    background-color: #0f172a;
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    padding: 12px 14px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+input[type="text"]:focus {
+    border-color: var(--accent-color);
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.btn.primary {
+    background-color: var(--accent-color);
+    color: #0f172a;
+}
+.btn.primary:hover {
+    background-color: var(--accent-hover);
+}
+
+.pipeline-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.step-box {
+    background-color: #0b1120;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 12px 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.85rem;
+    word-break: break-all;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+}
+
+.step-title {
+    color: var(--accent-color);
+    font-weight: bold;
+    margin-bottom: 4px;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+/* Stili Relazione Accademica */
+.report-section {
+    margin-bottom: 25px;
+}
+
+.report-section:last-child {
+    margin-bottom: 0;
+}
+
+.report-section h3 {
+    font-size: 1rem;
+    color: var(--accent-color);
+    margin-bottom: 10px;
+}
+
+.report-section p, .report-section li {
+    font-size: 0.9rem;
+    color: #cbd5e1;
+    line-height: 1.6;
+}
+
+.report-section ul {
+    margin: 8px 0;
+    padding-left: 20px;
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 0.85rem;
+}
+
+.comparison-table th, .comparison-table td {
+    border: 1px solid var(--border-color);
+    padding: 10px 12px;
+    text-align: left;
+}
+
+.comparison-table th {
+    background-color: #0b1120;
+    color: var(--accent-color);
+}
+
+.comparison-table td {
+    background-color: #0f172a;
+    color: #cbd5e1;
+}
